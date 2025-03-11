@@ -1,0 +1,383 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+    box-sizing: border-box;
+    background: #edf8fa;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 40px; */
+    background-color: rgb(38, 17, 113, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    /* margin: 20px auto; */
+    /* 90% -> 100% */
+    width: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 9999;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar-nav a:hover {
+    background-color: #ffffff;
+    color: #261171;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown-menu li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu a {
+    color: #261171;
+    padding: 10px 20px;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+/* Add Divider Line */
+.dropdown-menu li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Nested Dropdown Styling */
+.dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-nav li {
+        margin: 0;
+    }
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("Image/unbino.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(237, 248, 250) 3%,
+        rgba(237, 248, 250, 0) 25%
+    );
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Awal Slider */
+/* Atur posisi dan animasi teks */
+.carousel-caption {
+    bottom: 20%;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Animasi teks */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button styling */
+.btn-read-more {
+    background-color: #563a9c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #8b5dff;
+    color: #fff;
+}
+
+/* Responsive text size */
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+/* Akhir Slider */
+
+/* Card Promosi Unbi*/
+.card {
+    background-color: transparent; /* Menghilangkan warna background */
+    border: none; /* Menghilangkan garis border */
+    box-shadow: none; /* Menghilangkan bayangan (jika ada) */
+}
+
+/* CSS untuk mengatur background container */
+#custom-container {
+    background-color: #e6ebfe; /* Warna latar (merah muda) */
+    padding: 20px; /* Jarak dalam elemen */
+}
+
+.custom-btn {
+    background-color: #563a9c; /* Warna hijau */
+    color: white; /* Teks berwarna putih */
+    border: none; /* Menghilangkan border */
+}
+
+.custom-btn:hover {
+    background-color: #8b5dff; /* Warna hijau gelap saat hover */
+    color: #fff;
+}
+
+.headline {
+    text-align: center; /* Memusatkan teks */
+    border-bottom: 1.5px solid #563a9c; /* Garis bawah berwarna biru */
+    padding-bottom: 10px; /* Jarak antara teks dan garis bawah */
+    margin-bottom: 20px; /* Jarak antara garis bawah dan konten lainnya */
+}
+
+#custom-container-1 {
+    background-color: #e6ebfe; /* Warna latar (merah muda) */
+    padding: 60px; /* Jarak dalam elemen */
+}
+
+/* Custom warna tombol */
+.btn-custom {
+    background-color: #8b5dff; /* Warna latar oranye */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+}
+
+/* Hover efek untuk tombol custom */
+.btn-custom:hover {
+    background-color: #563a9c; /* Warna lebih gelap saat hover */
+    color: #fff; /* Tetap warna teks putih */
+}
+
+/* Gaya untuk link dalam teks pengumuman */
+.announcement-link {
+    text-decoration: none;
+    color: #563a9c; /* Warna biru seperti Bootstrap */
+    font-weight: bold;
+}
+
+.announcement-link:hover {
+    text-decoration: underline;
+    color: #563a9c; /* Warna biru gelap saat hover */
+}
+
+.card-title-1 {
+    border-bottom: 1.5px solid #563a9c; /* Warna biru */
+    padding-bottom: 5px;
+}
+
+.image-container {
+    overflow: hidden; /* Supaya gambar tidak keluar dari batas */
+    display: inline-block; /* Supaya ukuran kontainer mengikuti gambar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: bayangan */
+}
+
+.image-container img {
+    display: block; /* Menghilangkan jarak kosong di bawah gambar */
+    width: 100%; /* Gambar responsif */
+    transition: transform 0.5s ease; /* Durasi dan efek transisi */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Zoom gambar saat dihover */
+}
+
+/* Tambahkan garis di bawah setiap baris teks */
+.card-text span {
+    display: block;
+    border-bottom: 1px solid #563a9c; /* Warna biru */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*Kerjasama */
+/* Atur ukuran slider */
+#carouselExample {
+    width: 100%; /* Sesuaikan lebar slider */
+    height: 200px; /* Tinggi slider */
+    margin: 0 auto; /* Pusatkan slider */
+    overflow: hidden; /* Hilangkan elemen di luar batas slider */
+}
+
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 768px) {
+    #carouselExample {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselExample {
+        height: 200px;
+    }
+}
+/*Akhir Kerjasama */
+
+/*Bahasa*/
+/* Menambahkan sedikit styling untuk gambar bendera */
+.flag-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+/*Akhir Bahasa*/
+
+/*footer */
+/* Mengatur warna dan padding pada footer */
+.footer-custom {
+    background-color: #563a9c; /* Warna background gelap */
+    color: #fff; /* Warna teks putih */
+    padding: 40px 20px; /* Padding atas-bawah dan kiri-kanan */
+}
+
+/* Mengatur jarak antar elemen pada ukuran kecil */
+.footer-custom .col {
+    margin-bottom: 20px;
+}
+
+/* Menambahkan garis pembatas di atas footer */
+.footer-custom .footer-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+/* Link pada footer */
+.footer-custom a {
+    color: #ffc107; /* Warna kuning pada link */
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+/*footer */

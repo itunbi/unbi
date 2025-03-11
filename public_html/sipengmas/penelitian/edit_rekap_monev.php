@@ -1,0 +1,76 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    // Jika tidak ada session username, redirect ke index.php
+    header("Location: index.php");
+    exit;
+}
+
+// Koneksi ke database
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "lp2m-unbi";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
+
+// Ambil data berdasarkan ID
+$id = $_POST['id'];
+$query = "SELECT * FROM hasil_monev WHERE id = '$id'";
+$result = $conn->query($query);
+$row = $result->fetch_assoc();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Edit Data</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h3>Edit Data</h3>
+    <form method="POST" action="update_hasil_monev.php">
+        <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
+        <div class="mb-3">
+            <label for="nama_dosen" class="form-label">Nama Dosen</label>
+            <input type="text" class="form-control" id="nama_dosen" name="nama_dosen" value="<?php echo $row['nama_dosen']; ?>" required>
+        </div>
+       
+        <div class="mb-3">
+            <label for="skema_hibah" class="form-label">Skema Hibah</label>
+            <input type="text" class="form-control" id="skema_hibah" name="" value="<?php echo $row['skema_hibah']; ?>" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="nama_review" class="form-label">Nama Reviewer</label>
+            <input type="text" class="form-control" id="nama_review" name="nama_review" value="<?php echo $row['nama_review']; ?>" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="hasil_review" class="form-label">Hasil Review </label>
+            <input type="text" class="form-control" id="hasil_review" name="hasil_review" value="<?php echo $row['hasil_review']; ?>" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="tindak_lanjut" class="form-label">Tindak Lanjut</label>
+            <input type="text" class="form-control" id="tindak_lanjut" name="tindak_lanjut" value="<?php echo $row['tindak_lanjut']; ?>" required>
+        </div>
+
+        <div class="mb-3">
+                <label for="link_file" class="form-label">Masukkan URL (Link)</label>
+                <input type="url" class="form-control"  id="link_file" name="link_file" value="<?php echo $row['link_file']; ?>" required>
+            </div>
+
+        <button type="submit" class="btn btn-success">Simpan</button>
+        <a href="rekap-monev.php" class="btn btn-secondary">Kembali</a>
+    </form>
+</div>
+</body>
+</html>

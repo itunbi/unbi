@@ -1,0 +1,291 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Arial", sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(to right, #261171, #5037af);
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-menu a:hover {
+    color: #ffd700;
+}
+
+.navbar-menu li {
+    position: relative; /* Konteks posisi untuk submenu */
+}
+
+/* Submenu Styling */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Letakkan submenu tepat di bawah menu utama */
+    left: 0;
+    background-color: #5037af;
+    padding: 10px 0;
+    min-width: 200px;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Supaya di atas elemen lain */
+}
+
+.submenu li {
+    padding: 5px 15px;
+}
+
+.submenu a {
+    color: white;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu a:hover {
+    color: #ffd700;
+    background: rgba(255, 215, 0, 0.2);
+}
+
+/* Tampilkan submenu saat hover */
+.navbar-menu li:hover .submenu {
+    display: block;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to bottom, #261171, #5037af);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 120px;
+    clip-path: ellipse(150% 90% at 50% 10%);
+}
+
+.header-content h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #261171;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #f0c209;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card Panel */
+.card-panel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #261171;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #261171;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #5037af;
+}
+
+/* Footer */
+.footer {
+    background: #261171;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .card-panel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* Slider Section */
+
+.slider {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Navigation Arrows */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.slider-nav.prev {
+    left: 10px;
+}
+
+.slider-nav.next {
+    right: 10px;
+}
+
+.slider-nav:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Active Slide Styling */
+.slide:not(.active) {
+    display: none;
+}
