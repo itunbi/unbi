@@ -49,7 +49,15 @@
 <!-- hero start -->
 <section class="hero" id="home ">
 </section>
-
+    
+<nav class="nav">
+    <ul class="nav-menu">
+      <li><a href="/niaga">Berita</a></li>
+      <li><a href="/kegiatan">Kegiatan</a></li>
+      <li><a href="/alumni">Alumni</a></li>
+    </ul>
+</nav>
+    
 <div class="container">
     <div class="left-section">
       <h3>VISI</h3>
