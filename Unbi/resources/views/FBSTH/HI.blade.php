@@ -52,7 +52,7 @@
     
 <nav class="nav">
     <ul class="nav-menu">
-      <li><a href="/niaga">Berita</a></li>
+      <li><a href="/">Berita</a></li>
       <li><a href="/kegiatan">Kegiatan</a></li>
       <li><a href="/alumni">Alumni</a></li>
     </ul>
