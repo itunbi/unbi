@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="Image/Unbi.png">
-    <meta test>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"  />
     <link rel="stylesheet" href="{{ asset('Home.css') }}">
@@ -21,6 +21,23 @@
     <title>Universitas Bali Internasional</title>
   </head>
   <body>
+
+    <div id="customPopup" class="popup-overlay">
+      <div class="popup-box">
+          <div class="popup-header">
+              <h5>📢 Informasi Unbi Terkini</h5>
+              <span class="popup-close" onclick="closePopup()">×</span>
+          </div>
+          <div class="popup-body">
+              <img src="Image/akreditasi BAN-PT.jpg" alt="Gambar Info" class="popup-img">
+              <div class="popup-info">
+                  <h4>Selamat Atas Terakreditasi "Baik Sekali" Universitas Bali Internasional</h4>
+                  <p>Universitas Bali Internasional</p>
+                  <a href="https://pmb.unbi.ac.id/" class="popup-btn">Daftar Sekarang</a>
+              </div>
+          </div>
+      </div>
+    </div>
    
     <nav class="navbar navbar-expand-lg fixed-top mt-0">
       <div class="container-fluid">
@@ -480,10 +497,97 @@
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+       AOS.init();
+      function openPopup() {
+    const popup = document.getElementById("customPopup");
+    popup.style.display = "flex"; // Munculin dulu sebelum kasih animasi
+    requestAnimationFrame(() => {
+        popup.classList.remove("hide");
+        popup.classList.add("show");
+    });
+}
+
+function closePopup() {
+    const popup = document.getElementById("customPopup");
+    popup.classList.remove("show");
+    popup.classList.add("hide");
+
+    // Tunggu animasi selesai sebelum hide beneran
+    setTimeout(() => {
+        popup.style.display = "none";
+        popup.classList.remove("hide");
+    }, 400); // Sesuai durasi animasi CSS
+}
+
+// Popup otomatis muncul saat halaman selesai load
+window.onload = function() {
+    openPopup();
+};
+
     </script>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-   
+
+    <!-- Fether icon -->
+    <script>
+      feather.replace();
+    </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Inisialisasi feather icons
+  feather.replace();
+  
+  // Elemen yang diperlukan
+  const menuButton = document.getElementById('menu');
+  const navMenu = document.getElementById('navMenu');
+  const dropdowns = document.querySelectorAll('.dropdown');
+  
+  // Toggle sidebar
+  menuButton.addEventListener('click', function(e) {
+    e.preventDefault();
+    navMenu.classList.toggle('show');
+    document.body.style.overflow = navMenu.classList.contains('show') ? 'hidden' : '';
+  });
+  
+  // Dropdown functionality for mobile
+  dropdowns.forEach(function(dropdown) {
+    const link = dropdown.querySelector('.nav-link');
+    
+    link.addEventListener('click', function(e) {
+      if (window.innerWidth < 992) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Close other dropdowns
+        dropdowns.forEach(function(otherDropdown) {
+          if (otherDropdown !== dropdown) {
+            otherDropdown.classList.remove('show');
+          }
+        });
+        
+        // Toggle current dropdown
+        dropdown.classList.toggle('show');
+      }
+    });
+  });
+  
+  // Close menu when clicking outside
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth < 992) {
+      if (!navMenu.contains(e.target) && !menuButton.contains(e.target)) {
+        navMenu.classList.remove('show');
+        document.body.style.overflow = '';
+        
+        // Close all dropdowns
+        dropdowns.forEach(function(dropdown) {
+          dropdown.classList.remove('show');
+        });
+      }
+    }
+  });
+});
+</script>
+
   </body>
 </html>

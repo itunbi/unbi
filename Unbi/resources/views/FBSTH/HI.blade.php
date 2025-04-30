@@ -21,6 +21,7 @@
    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="Tamplate/HI.css">  
 </head>
@@ -45,19 +46,22 @@
             </li>
             <li><a href="https://pmb.unbi.ac.id/">Pendaftaran</a></li>
         </ul>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
     </nav>
 <!-- hero start -->
 <section class="hero" id="home ">
 </section>
-    
+
 <nav class="nav">
-    <ul class="nav-menu">
-      <li><a href="/">Berita</a></li>
-      <li><a href="/kegiatan">Kegiatan</a></li>
-      <li><a href="/alumni">Alumni</a></li>
-    </ul>
+  <ul class="nav-menu">
+    <li><a href="/beritaHI">Berita</a></li>
+    <li><a href="/kegiatanHI">Kegiatan</a></li>
+    <li><a href="#">Testimoni Perkuliahan</a></li>
+  </ul>
 </nav>
-    
+
 <div class="container">
     <div class="left-section">
       <h3>VISI</h3>
@@ -82,16 +86,7 @@
         </h5>
       <div class="program-label">Hubungan Internasional</div>
       <p>
-        pada Digital Government. Keunggulan ini berangkat dari perkembangan saat ini yang sudah
-masuk era revolusi industri 4.0., serta peraturan menteri pendayagunaan aparatur negara
-dan reformasi birokrasi yang mewajibkan instansi pemerintah mengembangkan inovasi tata
-kelola pemerintahan berbasis digital, agar pelayanan administrasi kepada Masyarakat lebih
-mudah dan efisien dari segi biaya dan waktu. Dengan demikian dalam pengembangan
-pelayanan administrasi dapat diketahui bahwa aplikasi yang dikembangkan memang benar- benar dibutuhkan oleh seluruh lapisan masyarakat, selain itu lulusan akan melalukan riset
-serta pengujian hipotesis dari berbagai masalah yang ada dimasyarakat dengan ide yang
-dimiliki. Dari hal tersebut, lulusan administrasi negara dapat secara mandiri bekerjasama
-dan berkomunikasi dengan dengan berbagai pihak baik Tingkat lokal, nasional dan
-internasional.</p>
+        Program Studi Hubungan Internasional UNBI merupakan satu-satunya program studi hubungan internasional di Indonesia yang berfokus pada kajian hubungan internasional kontemporer dan peran aktor transnasional non-negara di era globalisasi. Alih-alih terjebak dalam dogmatisme dan tradisionalisme pemahaman yang membelenggu perkembangan keilmuan Hubungan Internasional, Prodi HI UNBI berdiri atas dasar komitmen dalam mengeksplorasi luasnya khasanah keilmuan dan praktik Hubungan Internasional kontemporer. Dengan menawarkan konten dan proses pembelajaran yang aktual dengan perkembangan keilmuan dan praktik hubungan internasional saat ini, HI UNBI bertujuan mencetak para ahli analisis dan diplomasi transnasional yang memiliki pengetahuan dan kemampuan strategis yang dibutuhkan di seluruh bidang kerja hubungan internasional terkini.</p>
     </div>
     <div class="right-section">
       <div class="badge">
@@ -163,5 +158,16 @@ internasional.</p>
   </div>
 </footer>
 
+<script>
+  feather.replace();
+</script>
+
+<script>
+  // toggle class active
+const navbarNav = document.querySelector(".navbar-nav");
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+}
+</script>
 </body>
 </html>
