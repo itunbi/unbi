@@ -34,8 +34,8 @@
         <ul class="navbar-nav">
             <!-- Other Menu Items -->
             <li><a href="/">Home</a></li>
-            <li><a href="/Tentang Kami">Tentang Kami</a></li>
-            <li><a href="/Kehidupan Kampus">Kehidupan Kampus</a></li>
+            <li><a href="/TentangKami">Tentang Kami</a></li>
+            <li><a href="/KehidupanKampus">Kehidupan Kampus</a></li>
             <!-- Dropdown Fakultas -->
             <li class="dropdown">
                 <a href="#">Lembaga</a>

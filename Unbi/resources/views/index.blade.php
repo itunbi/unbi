@@ -106,6 +106,9 @@
       </ul>
 
       </div>
+      <div class="navbar-extra">
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
       </div>
   </nav>
    
