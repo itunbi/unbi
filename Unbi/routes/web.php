@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/kegiatanHI', function () {
+    return view('navhi.kegiatanHI');
+});
+
+Route::get('/beritaHI', function () {
+    return view('navhi.beritaHI');
+});
+
 Route::get('/LP3M', function () {
     return view('LP3M');
 });
