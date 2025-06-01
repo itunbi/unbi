@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"  />
     <link rel="stylesheet" href="{{ asset('Home.css') }}">
 
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  />
 
@@ -327,9 +328,8 @@
         <div class="card">
           <div class="card-body">
             <h3 class="card-title-1">Pengumuman</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span> Inspirasi Mahasiswa: Seminar Pengembangan Karier di Era Digital,Kamis, 19 Desember 2024
-                 Pukul 09.00 - 12.00 WITA, Aula Universitas Bali Internasional.</span></p>
+            <a href="PENGUMUMAN/BA Pengumuman SPMB PMDK II Seleksi I.pdf" target="_blank" class="announcement-link"><p class="card-text">
+              <span>BA Pengumuman SPMB PMDK II Seleksi I</span></p>
             </a></a>
             <a href="#" class="btn btn-custom">Lihat Lainnya</a>
           </div>

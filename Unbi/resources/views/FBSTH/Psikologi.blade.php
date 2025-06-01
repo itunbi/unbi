@@ -21,6 +21,8 @@
    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
+    <script src="https://unpkg.com/feather-icons"></script>
+
 
     <link rel="stylesheet" href="Tamplate/Psikologi.css">    
 </head>
@@ -45,6 +47,9 @@
             </li>
             <li><a href="https://pmb.unbi.ac.id/">Pendaftaran</a></li>
         </ul>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
     </nav>
 <!-- hero start -->
 <section class="hero" id="home ">
@@ -149,6 +154,19 @@ dalam bidang pendidikan, penelitian, maupun pengabdian kepada masyarakat.</p>
     <p>&copy; 2024 All Rights Reserved. By <a href="#">Universitas Bali Internasional</a></p>
   </div>
 </footer>
+
+<script>
+  feather.replace();
+</script>
+
+
+<script>
+  // toggle class active
+const navbarNav = document.querySelector(".navbar-nav");
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
