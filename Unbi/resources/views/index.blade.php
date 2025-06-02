@@ -9,48 +9,51 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"  />
     <link rel="stylesheet" href="{{ asset('Home.css') }}">
+    
 
+    <!-- Fether icon -->
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" />
-    <link href="https://db.onlinewebfonts.com/c/c07d5c6528b6cc0eac08afd7a3199657?family=TrajanPro-Regular" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" />
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/c07d5c6528b6cc0eac08afd7a3199657?family=TrajanPro-Regular" />
     <!-- AOS Animation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Universitas Bali Internasional</title>
   </head>
   <body>
 
-    <div id="customPopup" class="popup-overlay">
-      <div class="popup-box">
-          <div class="popup-header">
-              <h5>📢 Informasi Unbi Terkini</h5>
-              <span class="popup-close" onclick="closePopup()">×</span>
-          </div>
-          <div class="popup-body">
-              <img src="Image/akreditasi BAN-PT.jpg" alt="Gambar Info" class="popup-img">
-              <div class="popup-info">
-                  <h4>Selamat Atas Terakreditasi "Baik Sekali" Universitas Bali Internasional</h4>
-                  <p>Universitas Bali Internasional</p>
-                  <a href="https://pmb.unbi.ac.id/" class="popup-btn">Daftar Sekarang</a>
-              </div>
+    <!-- Popup Modal -->
+<div id="customPopup" class="popup-overlay">
+  <div class="popup-box">
+      <div class="popup-header">
+          <h5>📢 Informasi Unbi Terkini</h5>
+          <span class="popup-close" onclick="closePopup()">×</span>
+      </div>
+      <div class="popup-body">
+          <img src="Image/akreditasi BAN-PT.jpg" alt="Gambar Info" class="popup-img">
+          <div class="popup-info">
+              <h4>Selamat Atas Terakreditasi "Baik Sekali" Universitas Bali Internasional</h4>
+              <p>Universitas Bali Internasional</p>
+              <a href="https://pmb.unbi.ac.id/" class="popup-btn">Daftar Sekarang</a>
           </div>
       </div>
-    </div>
+  </div>
+</div>
    
     <nav class="navbar navbar-expand-lg fixed-top mt-0">
       <div class="container-fluid">
     
           <div class="navbar-logo">
-              <img src="Image/Unbi.png" alt="Logo" width="70" height="70">
+              <img src="Image/Unbi.png">
               <span style="padding-right: 20px">Universitas Bali Internasional</span>
           </div>
       
 
 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navMenu">
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0 w-100">
           <li class="nav-item"><a class="nav-link" href="/TentangKami">Tentang Kami</a></li>
           <li class="nav-item"><a class="nav-link" href="/KehidupanKampus">Kehidupan Kampus</a></li>
@@ -60,7 +63,7 @@
 
                   <!-- Dropdown FBSTH -->
                   <li class="dropdown">
-                      <a href="/FBSTH">FBSTH</a>
+                      <a href="#">FBSTH</a>
                       <ul class="dropdown-menu">
                           <li><a href="/BIDI">Bisnis Digital</a></li>
                           <li><a href="/HI">Hubungan Internasional</a></li>
@@ -73,7 +76,7 @@
                   </li>
                   <!-- Dropdown FIIK -->
                   <li class="dropdown">
-                      <a href="/FIIK">FIIK</a>
+                      <a href="#">FIIK</a>
                       <ul class="dropdown-menu">
                           <li><a href="/ARS">Administrasi Rumah Sakit</a></li>
                           <li><a href="/D4TLM">D4 Teknologi Laboratorium Medik</a></li>
@@ -94,15 +97,17 @@
                   <a href="/LP2M">LP2M</a>
               </div>
           </li>
+          
           <li class="nav-item dropdown">
-              <a class="nav-link" href="">Kuisioner</a>
-              <div class="dropdown-menu">
-                  <a href="https://forms.gle/2ma2QFbjiUWuQc6UA">TENAGA KEPENDIDIKAN</a>
-                  <a href="https://forms.gle/8GeYsM12KkxnhugF9">SARANA PRASARANA</a>
-                  <a href="https://forms.gle/5cYo6d7cvkFQW4G49">PENGELOLA</a>
-                  <a href="https://forms.gle/s212dD2uqgWcysL66">TENAGA PENDIDIK</a>
-              </div>
-          </li>
+            <a class="nav-link" href="">Kuisioner</a>
+            <div class="dropdown-menu">
+                <a href="https://forms.gle/2ma2QFbjiUWuQc6UA">TENAGA KEPENDIDIKAN</a>
+                <a href="https://forms.gle/8GeYsM12KkxnhugF9">SARANA PRASARANA</a>
+                <a href="https://forms.gle/5cYo6d7cvkFQW4G49">PENGELOLA</a>
+                <a href="https://forms.gle/s212dD2uqgWcysL66">TENAGA PENDIDIK</a>
+            </div>
+        </li>
+          
           <li class="nav-item"><a class="nav-link" href="https://pmb.unbi.ac.id/">Pendaftaran</a></li>
       </ul>
 
@@ -112,7 +117,7 @@
       </div>
       </div>
   </nav>
-   
+
     <!-- hero start -->
     <section class="hero" id="home ">
     </section>
@@ -186,7 +191,7 @@
         <div class="row">
           <div class="col-md-3" data-aos="fade-right" >
             <a a href="#" target="_blank" class="image-container" >
-            <img src="Image/promo1.png" class="img-fluid rounded-start" alt="..." /></a>
+            <img src="image/promo1.png" class="img-fluid rounded-start" alt="..." /></a>
           </div>
           <div class="col-md-9">
             <div class="card-body" data-aos="fade-left" data-aos-delay="300">
@@ -203,7 +208,7 @@
                 dan kesempatan magang di perusahaan global. Dengan pendekatan yang holistik dan peluang internasional, kami memastikan Anda siap menghadapi tantangan dunia kerja dan meraih kesuksesan global.
               </p>
             </p>
-              <a href="#" class="btn btn-custom">DAFTAR DISINI</a>
+              <a href="https://pmb.unbi.ac.id/" class="btn btn-custom">DAFTAR DISINI</a>
             </div>
           </div>
         </div>
@@ -222,7 +227,7 @@
         <div class="row">
           <div class="col-md-6">
             <a href="#" target="_blank" class="image-container" >
-              <img src="Image/Unggul.jpg" class="card-img-top" alt="...">
+              <img src="image/Unggul.jpg" class="card-img-top" alt="...">
                 </a>
           </div>
           <div class="col-md-6">
@@ -243,7 +248,7 @@
       <div class="col">
         <div class="card h-100">
           <a href="#" target="_blank" class="image-container" >
-            <img src="Image/image3.jpg" class="card-img-top" alt="...">
+            <img src="image/image3.jpg" class="card-img-top" alt="...">
               </a>
           <div class="card-body">
             <h5 class="card-title">Pelantikan Rektor</h5>
@@ -257,7 +262,7 @@
       <div class="col">
         <div class="card h-100">
             <a href="#" target="_blank" class="image-container" >
-          <img src="Image/image1.jpg" class="card-img-top" alt="...">
+          <img src="image/image1.jpg" class="card-img-top" alt="...">
             </a>
           <div class="card-body">
             <h5 class="card-title">Acara Puncak Dies Natalis ke-8 Universitas Bali Internasional</h5>
@@ -271,7 +276,7 @@
       <div class="col">
         <div class="card h-100">
           <a href="#" target="_blank" class="image-container" >
-            <img src="Image/PPA.JPG" class="card-img-top" alt="...">
+            <img src="Image/PPA.jpg" class="card-img-top" alt="...">
               </a>
           <div class="card-body">
             <h5 class="card-title">Menteri PPPA Bintang Puspayoga Ajak UNBI Dukung Percepatan Program Desa Ramah Perempuan dan Peduli Anak</h5>
@@ -323,112 +328,112 @@
 
     <!--Pengumuman dan Agenda-->
     <div class="container my-3">
-    <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Pengumuman</h3>
-            <a href="PENGUMUMAN/BA Pengumuman SPMB PMDK II Seleksi I.pdf" target="_blank" class="announcement-link"><p class="card-text">
-              <span>BA Pengumuman SPMB PMDK II Seleksi I</span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="PENGUMUMAN/BA Pengumuman SPMB PMDK II Seleksi I.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>BA Pengumuman SPMB PMDK II Seleksi I</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Pengumuman</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Workshop Penulisan Proposal PKM (Program Kreativitas Mahasiswa),
-                 Sabtu, 14 Desember 2024,Pukul 08.30 - 12.30 WITA,Aula Universitas Bali Internasional</span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Workshop Penulisan Proposal PKM (Program Kreativitas Mahasiswa),
+                   Sabtu, 14 Desember 2024,Pukul 08.30 - 12.30 WITA,Aula Universitas Bali Internasional</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Pengumuman</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Diskusi Panel: Etika dan Teknologi dalam Era AI,Selasa, 17 Desember 2024,
-                 pukul 13.00 - 15.30 WITA,Aula Universitas Bali Internasional</span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Diskusi Panel: Etika dan Teknologi dalam Era AI,Selasa, 17 Desember 2024,
+                   pukul 13.00 - 15.30 WITA,Aula Universitas Bali Internasional</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-       <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Pengumuman</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Lomba Debat Mahasiswa Nasional 2024, Minggu, 22 Desember 2024,
-                 pukul 09.00 - selesai,Aula Universitas Bali Internasional</span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+         <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Lomba Debat Mahasiswa Nasional 2024, Minggu, 22 Desember 2024,
+                   pukul 09.00 - selesai,Aula Universitas Bali Internasional</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Agenda</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Workshop Penulisan Proposal PKM, Sabtu, 14 Desember 2024,
-                 pukul 08.30 - 12.30 WITA, Membantu mahasiswa menyusun proposal PKM dengan panduan dari dosen pembimbing., Universitas Bali Internasional </span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Agenda</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Workshop Penulisan Proposal PKM, Sabtu, 14 Desember 2024,
+                   pukul 08.30 - 12.30 WITA, Membantu mahasiswa menyusun proposal PKM dengan panduan dari dosen pembimbing., Universitas Bali Internasional </span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-            <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Agenda</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Diskusi Panel: Etika dan Teknologi dalam Era AI, Selasa, 17 Desember 2024,
-                 pukul 13.00 - 15.30 WITA, Membahas tantangan etis dan peluang dari penggunaan teknologi AI., Universitas Bali Internasional </span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+              <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Agenda</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Diskusi Panel: Etika dan Teknologi dalam Era AI, Selasa, 17 Desember 2024,
+                   pukul 13.00 - 15.30 WITA, Membahas tantangan etis dan peluang dari penggunaan teknologi AI., Universitas Bali Internasional </span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-                  <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Agenda</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Pelatihan Dasar Desain Grafis dengan Canva, Rabu, 18 Desember 2024,
-                 pukul 10.00 - 12.00 WITA, Pelatihan ini bertujuan meningkatkan keterampilan desain grafis mahasiswa., Lab Komputer Universitas Bali Internasional</span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+                    <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Agenda</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Pelatihan Dasar Desain Grafis dengan Canva, Rabu, 18 Desember 2024,
+                   pukul 10.00 - 12.00 WITA, Pelatihan ini bertujuan meningkatkan keterampilan desain grafis mahasiswa., Lab Komputer Universitas Bali Internasional</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
-      </div>
-      
-                        <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title-1">Agenda</h3>
-            <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-              <span>Seminar Inspirasi Mahasiswa: Pengembangan Karier di Era Digital, Kamis, 19 Desember 2024,
-                 pukul 09.00 - 12.00 WITA, Seminar tentang persiapan karier di era digital dengan pembicara profesional, Universitas Bali Internasional </span></p>
-            </a></a>
-            <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+        
+                          <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Agenda</h3>
+              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Seminar Inspirasi Mahasiswa: Pengembangan Karier di Era Digital, Kamis, 19 Desember 2024,
+                   pukul 09.00 - 12.00 WITA, Seminar tentang persiapan karier di era digital dengan pembicara profesional, Universitas Bali Internasional </span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
           </div>
         </div>
+        
       </div>
-      
     </div>
-  </div>
     <!--Akhir Pengumuman dan Agenda-->
 <!-- Bootstrap Slider -->
 <div id="custom-container-1" class= "container-fluid">
@@ -455,6 +460,7 @@
   </button>
 </div>
 </div>
+  
   
 
     <!--Footer-->
@@ -500,7 +506,7 @@
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-       AOS.init();
+      AOS.init();
       function openPopup() {
     const popup = document.getElementById("customPopup");
     popup.style.display = "flex"; // Munculin dulu sebelum kasih animasi
