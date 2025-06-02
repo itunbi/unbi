@@ -615,9 +615,9 @@ html {
 
 /* Card Promosi Unbi*/
 .card {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
+  background-color: transparent; /* Menghilangkan warna background */
+  border: none; /* Menghilangkan garis border */
+  box-shadow: none; /* Menghilangkan bayangan (jika ada) */
 }
 
 /* CSS untuk mengatur background container */
@@ -628,8 +628,8 @@ html {
 
 .custom-btn {
   background-color: #563a9c; /* Warna hijau */
-  color: white;
-  border: none;
+  color: white; /* Teks berwarna putih */
+  border: none; /* Menghilangkan border */
 }
 
 .custom-btn:hover {
@@ -639,27 +639,27 @@ html {
 
 .headline {
   text-align: center; /* Memusatkan teks */
-  border-bottom: 1.5px solid #563a9c;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  border-bottom: 1.5px solid #563a9c; /* Garis bawah berwarna biru */
+  padding-bottom: 10px; /* Jarak antara teks dan garis bawah */
+  margin-bottom: 20px; /* Jarak antara garis bawah dan konten lainnya */
 }
 
 #custom-container-1 {
-  background-color: #e6ebfe;
-  padding: 60px;
+  background-color: #e6ebfe; /* Warna latar (merah muda) */
+  padding: 60px; /* Jarak dalam elemen */
 }
 
 /* Custom warna tombol */
 .btn-custom {
-  background-color: #8b5dff;
-  color: #fff;
-  border: none;
+  background-color: #8b5dff; /* Warna latar oranye */
+  color: #fff; /* Warna teks putih */
+  border: none; /* Menghilangkan border */
 }
 
 /* Hover efek untuk tombol custom */
 .btn-custom:hover {
-  background-color: #563a9c;
-  color: #fff;
+  background-color: #563a9c; /* Warna lebih gelap saat hover */
+  color: #fff; /* Tetap warna teks putih */
 }
 
 /* Gaya untuk link dalam teks pengumuman */
@@ -680,15 +680,15 @@ html {
 }
 
 .image-container {
-  overflow: hidden;
-  display: inline-block;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Supaya gambar tidak keluar dari batas */
+  display: inline-block; /* Supaya ukuran kontainer mengikuti gambar */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional: bayangan */
 }
 
 .image-container img {
-  display: block;
-  width: 100%;
-  transition: transform 0.5s ease;
+  display: block; /* Menghilangkan jarak kosong di bawah gambar */
+  width: 100%; /* Gambar responsif */
+  transition: transform 0.5s ease; /* Durasi dan efek transisi */
 }
 
 .image-container:hover img {
@@ -722,10 +722,10 @@ html {
 /*Kerjasama */
 /* Atur ukuran slider */
 #carouselExample {
-  width: 100%;
-  height: 200px;
-  margin: 0 auto;
-  overflow: hidden;
+  width: 100%; /* Sesuaikan lebar slider */
+  height: 200px; /* Tinggi slider */
+  margin: 0 auto; /* Pusatkan slider */
+  overflow: hidden; /* Hilangkan elemen di luar batas slider */
 }
 
 /* Responsif untuk layar lebih kecil */
@@ -743,7 +743,7 @@ html {
 /*Akhir Kerjasama */
 
 /*Bahasa*/
-
+/* Menambahkan sedikit styling untuk gambar bendera */
 .flag-icon {
   width: 20px;
   height: auto;
@@ -752,11 +752,11 @@ html {
 /*Akhir Bahasa*/
 
 /*footer */
-
+/* Mengatur warna dan padding pada footer */
 .footer-custom {
-  background-color: #563a9c;
-  color: #fff;
-  padding: 40px 20px;
+  background-color: #563a9c; /* Warna background gelap */
+  color: #fff; /* Warna teks putih */
+  padding: 40px 20px; /* Padding atas-bawah dan kiri-kanan */
 }
 
 /* Mengatur jarak antar elemen pada ukuran kecil */
@@ -773,7 +773,7 @@ html {
 
 /* Link pada footer */
 .footer-custom a {
-  color: #ffc107;
+  color: #ffc107; /* Warna kuning pada link */
   text-decoration: none;
 }
 
