@@ -17,8 +17,49 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/niaga', function () {
+    return view('navniaga.niaga');
+});
+
+Route::get('/kegiatan', function () {
+    return view('navniaga.kegiatan');
+});
+
+Route::get('/alumni', function () {
+    return view('navniaga.alumni');
+});
+
 Route::get('/kegiatanHI', function () {
     return view('navhi.kegiatanHI');
+});
+
+
+Route::get('/pl', function () {
+    return view('navpsikologi.pl');
+});
+
+Route::get('/Laporan', function () {
+    return view('navpsikologi.Laporan');
+});
+
+Route::get('/Pedoman', function () {
+    return view('navpsikologi.Pedoman');
+});
+
+Route::get('/struktur', function () {
+    return view('navpsikologi.struktur');
+});
+
+Route::get('/Survei', function () {
+    return view('navpsikologi.Survei');
+});
+
+Route::get('/cp', function () {
+    return view('navpsikologi.cp');
+});
+
+Route::get('/ED', function () {
+    return view('navpsikologi.ED');
 });
 
 Route::get('/beritaHI', function () {

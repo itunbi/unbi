@@ -35,8 +35,8 @@
         <ul class="navbar-nav">
             <!-- Other Menu Items -->
             <li><a href="/">Home</a></li>
-            <li><a href="/Tentang Kami">Tentang Kami</a></li>
-            <li><a href="/Kehidupan Kampus">Kehidupan Kampus</a></li>
+            <li><a href="/TentangKami">Tentang Kami</a></li>
+            <li><a href="/KehidupanKampus">Kehidupan Kampus</a></li>
             <!-- Dropdown Fakultas -->
             <li class="dropdown">
                 <a href="#">Lembaga</a>
@@ -54,6 +54,40 @@
 <!-- hero start -->
 <section class="hero" id="home ">
 </section>
+
+<nav class="nav">
+  <ul class="nav-menu">
+    <li class="dropdown">
+      <a>Akademik</a>
+      <ul class="dropdown-menu">
+        <li><a href="/struktur">Struktur Akademik</a></li>
+        <li><a href="/pl">Profile Lulusan</a></li>
+        <li><a href="/cp">Capaian Pembelajaran</a></li>
+        <li><a href="https://siakad.unbi.ac.id/">KRS Online</a></li>
+        <li><a href="/ED">Evaluasi Dosen</a></li>
+       
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a>Kemahasiswaan</a>
+      <ul class="dropdown-menu">
+        <li><a href="Pengumuman/TATA TERTIB.pdf">Tata Prilaku Mahasiswa</a></li>
+        <li><a href="https://www.instagram.com/p/DBYdc78SMEg/?utm_source=ig_web_copy_link">Himpunan Mahasiswa Psikologi</a></li>
+        <li><a href="/KehidupanKampus">Unit Kegiatan Mahasiswa</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <a>Survei</a>
+      <ul class="dropdown-menu">
+        <li><a href="/Pedoman">Pedoman Survei</a></li>
+        <li><a href="/Laporan">Laporan Survei</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</nav>
 
 <div class="container">
     <div class="left-section">
