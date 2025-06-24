@@ -78,6 +78,12 @@
             <p>Informasi Kegiatan Pengabdian Universitas Bali Internasional</p>
             <a href="/BeritaLP2M" class="btn">Selengkapnya</a>
         </div>
+        <div class="card">
+            <img src="Image/eva.jpg" alt="Berita">
+            <h2>Pedoman</h2>
+            <p>Ikuti Pedoman terbaru dari Universitas Bali Internasional.</p>
+            <a href="/pedoman" class="btn">Selengkapnya</a>
+        </div>
     </section>
 
     <!-- Footer -->
