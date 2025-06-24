@@ -25,6 +25,10 @@ Route::get('/kegiatan', function () {
     return view('navniaga.kegiatan');
 });
 
+Route::get('/kegiatantem', function () {
+    return view('navtem.kegiatantem');
+});
+
 Route::get('/alumni', function () {
     return view('navniaga.alumni');
 });
@@ -40,6 +44,10 @@ Route::get('/pl', function () {
 
 Route::get('/Laporan', function () {
     return view('navpsikologi.Laporan');
+});
+
+Route::get('/pedomantem', function () {
+    return view('navtem.pedomantem');
 });
 
 Route::get('/Pedoman', function () {
@@ -77,6 +85,10 @@ Route::get('/LP2M', function () {
 /* Konten */
 Route::get('/BeritaLP2M', function () {
     return view('LP2M.BeritaLP2M');
+});
+
+Route::get('/pedoman', function () {
+    return view('LP2M.pedoman');
 });
 
 Route::get('/pengumuman', function () {
