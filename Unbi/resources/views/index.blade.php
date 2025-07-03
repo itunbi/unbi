@@ -345,9 +345,8 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-                <span>Workshop Penulisan Proposal PKM (Program Kreativitas Mahasiswa),
-                   Sabtu, 14 Desember 2024,Pukul 08.30 - 12.30 WITA,Aula Universitas Bali Internasional</span></p>
+              <a href="Pengumuman/BA Pengumuman SPMB PMDK II Seleksi I.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>BA Pengumuman SPMB PMDK II Seleksi I</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
             </div>
