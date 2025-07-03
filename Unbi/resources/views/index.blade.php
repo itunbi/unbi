@@ -333,7 +333,7 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="PENGUMUMAN/Pengumuman uas genap 2425.pdf" target="_blank" class="announcement-link"><p class="card-text">
+              <a href="Pengumuman/Pengumuman uas genap 2425.pdf" target="_blank" class="announcement-link"><p class="card-text">
                 <span>Pengumuman UAS Genap 24/25</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
