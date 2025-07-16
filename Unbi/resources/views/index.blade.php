@@ -227,7 +227,7 @@
         <div class="row">
           <div class="col-md-6">
             <a href="#" target="_blank" class="image-container" >
-              <img src="image/Unggul.jpg" class="card-img-top" alt="...">
+              <img src="Image/Unggul.jpg" class="card-img-top" alt="...">
                 </a>
           </div>
           <div class="col-md-6">
@@ -248,7 +248,7 @@
       <div class="col">
         <div class="card h-100">
           <a href="#" target="_blank" class="image-container" >
-            <img src="image/image3.jpg" class="card-img-top" alt="...">
+            <img src="Image/image3.jpg" class="card-img-top" alt="...">
               </a>
           <div class="card-body">
             <h5 class="card-title">Pelantikan Rektor</h5>
@@ -262,7 +262,7 @@
       <div class="col">
         <div class="card h-100">
             <a href="#" target="_blank" class="image-container" >
-          <img src="image/image1.jpg" class="card-img-top" alt="...">
+          <img src="Image/image1.jpg" class="card-img-top" alt="...">
             </a>
           <div class="card-body">
             <h5 class="card-title">Acara Puncak Dies Natalis ke-8 Universitas Bali Internasional</h5>
@@ -333,7 +333,7 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="PENGUMUMAN/Pengumuman uas genap 2425.pdf" target="_blank" class="announcement-link"><p class="card-text">
+              <a href="Pengumuman/Pengumuman uas genap 2425.pdf" target="_blank" class="announcement-link"><p class="card-text">
                 <span>Pengumuman UAS Genap 24/25</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
@@ -345,9 +345,8 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-                <span>Workshop Penulisan Proposal PKM (Program Kreativitas Mahasiswa),
-                   Sabtu, 14 Desember 2024,Pukul 08.30 - 12.30 WITA,Aula Universitas Bali Internasional</span></p>
+              <a href="Pengumuman/BA Pengumuman SPMB PMDK II Seleksi I.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>BA Pengumuman SPMB PMDK II Seleksi I</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
             </div>
@@ -358,9 +357,8 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-                <span>Diskusi Panel: Etika dan Teknologi dalam Era AI,Selasa, 17 Desember 2024,
-                   pukul 13.00 - 15.30 WITA,Aula Universitas Bali Internasional</span></p>
+              <a href="Pengumuman/1028.1.D.12.001 SURAT BEBAS PUSTAKA.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Bebas Pustaka</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
             </div>
@@ -371,9 +369,68 @@
           <div class="card">
             <div class="card-body">
               <h3 class="card-title-1">Pengumuman</h3>
-              <a href="#" target="_blank" class="announcement-link"><p class="card-text">
-                <span>Lomba Debat Mahasiswa Nasional 2024, Minggu, 22 Desember 2024,
-                   pukul 09.00 - selesai,Aula Universitas Bali Internasional</span></p>
+              <a href="Pengumuman/SURAT KETERANGAN POIN SKP NEW.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Keterangan Poin SKP</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="Pengumuman/Surat Pernyataan Bersedia Melengkapi Berkas Yudisium 2025.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Pernyataan Bersedia Melengkapi Berkas Yudisium</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="Pengumuman/Surat Pernyataan Bersedia Yudisium.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Pernyataan Bersedia Yudisium</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="Pengumuman/SURAT BEBAS ADMINISTRASI.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Keterangan Bebas Administrasi</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="Pengumuman/1026.0.B06.005 Form. 05 SURAT BEBAS ALAT & BAHAN.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Keterangan Bebas Alat & Bahan</span></p>
+              </a></a>
+              <a href="#" class="btn btn-custom">Lihat Lainnya</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title-1">Pengumuman</h3>
+              <a href="Pengumuman/1026.0.B06.006 Form. 06 SURAT BEBAS LAB.pdf" target="_blank" class="announcement-link"><p class="card-text">
+                <span>Surat Keterangan Bebas Lab</span></p>
               </a></a>
               <a href="#" class="btn btn-custom">Lihat Lainnya</a>
             </div>
